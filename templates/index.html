@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<link rel="stylesheet" href='/static/style.css'/>
+<head>
+    <meta charset="UTF-8">
+    <title>Mortgage Calculator</title>
+    <h1 class="title">Mortgage Calculator</h1>
+</head>
+<body>
+    <form action="" method="post" class="enter">
+        <div>
+            <label for="loan_amount">Loan Amount($):</label>
+            <input type="number" name="loan_amount" id="loan_amount" placeholder="Enter Loan Amount" step="any" value = {{val}} class="choose">
+        </div>
+        <div>
+            <label for="interest_rate">Interest Rate (% - without comma or dot):</label>
+            <input type="number" name="interest_rate" id="interest_rate" placeholder="Enter Interest Rate" step="any" value = {{val}} class="choose">
+        </div>
+        <div>
+            <label for="loan_term">Loan Term (years - without comma or dot):</label>
+            <input type="number" name="loan_term" id="loan_term" placeholder="Enter Loan Term" value = {{val}} class="choose">
+        </div>
+        <input type="submit" value="Calculate">
+    </form>
+    <h1>{{ans}}</h1>
+</body>
+<footer class="contacts">
+    <a href="hello" style="color: aliceblue;" >contacts</a>
+</footer>
+</html>
